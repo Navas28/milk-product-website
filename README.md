@@ -19,19 +19,22 @@ A fully responsive website designed for selling dairy products.
 Below are some screenshots of the website:  
 
 ### Homepage  
-![dairy-home](https://github.com/user-attachments/assets/dfc62b14-849e-4e10-8406-cbdd33c1b006)
+![Home](https://github.com/user-attachments/assets/3567ccb7-4910-4a3d-aa38-28740490a35c)
+
 
 ### Product Page  
-![Product-Category](https://github.com/user-attachments/assets/2b2320e4-042a-4de0-9b5e-c1bc31c3c09c)
-![Product](https://github.com/user-attachments/assets/08b573f7-05fe-463d-8a73-129e84eecfb7)
+![Product-category](https://github.com/user-attachments/assets/ea9a2de3-63de-4ac6-af15-316311758bb8)
+
+
+![Product](https://github.com/user-attachments/assets/0590def0-1439-4a68-a4f6-6322fbe9cb5b)
 
 ### Other Sections
 
-![Overview](https://github.com/user-attachments/assets/a09b1adc-69d6-409f-9318-eeb4973615d2)
-![Facilitys](https://github.com/user-attachments/assets/b0da3457-17b2-4f87-abda-20ed6b0c7e45)
-![Login](https://github.com/user-attachments/assets/e9029595-181b-4dba-9abf-1eb13d4d56d3)
-![Sign up](https://github.com/user-attachments/assets/55672bee-b6ea-42ee-9da5-7cade7cedca9)
-![Faq](https://github.com/user-attachments/assets/688f1e8e-a5fa-4507-bfbf-9a3291b00daf)
+![Overview](https://github.com/user-attachments/assets/1f2dd836-0b11-49cf-a2f3-e6b4c7892b19)
+![Facilitys](https://github.com/user-attachments/assets/0ec6143a-f087-4809-a03c-556471897002)
+![Login](https://github.com/user-attachments/assets/e44dfc3c-6a9c-455c-8601-4eb82d1463a5)
+![Sign up](https://github.com/user-attachments/assets/4fcd0658-9f73-46a8-8176-2fb875750177)
+![Faq](https://github.com/user-attachments/assets/6491a68c-df3b-4081-aa1c-060ef034965f)
 
 
 
