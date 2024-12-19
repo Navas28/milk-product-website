@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sign-In Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        .google {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+        }
+        .google-container {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            padding: 40px 40px;
+            border-radius: 10px;
+        }
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .container h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 14px;
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+        .forgot a{
+            font-size: .9rem;
+            text-decoration: none;
+            color: blue;
+        }
+        .forgot a:hover{
+            text-decoration: underline;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #5f6368;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group a {
+            display: block;
+            font-size: 12px;
+            color: #1a73e8;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+        .form-group a:hover {
+            text-decoration: underline;
+        }
+        .show-password {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #5f6368;
+            margin-top: 10px;
+        }
+        .google-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #193B61;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .google-btn a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .footer {
+            font-size: 12px;
+            color: #5f6368;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: blue;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="google">
+    <div class="google-container">
+        <div class="logo">
+            <img src="image/Google-logo.png" alt="Google Logo">
+        </div>
+        <h1>Login</h1>
+        <p>with your Google Account</p>
+        <form>
+            <div class="form-group">
+                <label for="email">Email or phone</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email or phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter Your Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="show-password">
+                <input type="checkbox" >
+                <label for="show-password">Show Password</label>
+            </div>
+            <div class="forgot">
+              <a href="#" >Forgot password?</a>   
+            </div>
+            
+            <button type="submit" class="google-btn"><a href="LoginSuccess.html">Login</a></button>
+        </form>
+
+        <div class="footer">
+            <a href="#">Help</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+
+</div>  
+</body>
+</html>

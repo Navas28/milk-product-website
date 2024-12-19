@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Address</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            margin: 40px auto;
+            gap: 20px;
+            width: 60%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+        }
+        .image-section {
+            flex: 1; /* equal width */
+            margin-right: 20px;
+            text-align: center;
+            background-color: #193B61;
+            border-radius: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-section p {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        .form-section {
+            flex: 1; /* equal width */
+            margin-top: 30px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        label { 
+            color: #333;
+        }
+        input, textarea, select {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .submit-btn {
+            background-color: #193B61;
+            color: white;
+            font-size: 1.2em;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .submit-btn a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media (max-width: 992px){
+            .container {
+            width: 80%;
+            padding: 20px;
+        }
+        @media (max-width:768px){
+            .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin-top: 20px;
+            padding: 20px;
+            }
+            .image-section {
+                margin-right: 0; 
+                text-align: center;
+            }
+            .image-section img {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto; 
+            }
+            .form-section {
+                margin-top: 20px;
+            }
+
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="image-section">
+            <img src="image/delivery-Photoroom.png" alt="Delivery Image">
+            <p>Thank you for your order <br> We will deliver it within the specified time <br> Sit back, relax, and get ready to enjoy your order</p>
+        </div>
+
+       
+        <div class="form-section">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="deliveryTime">Preferred Delivery Time</label>
+                    <select id="deliveryTime" name="deliveryTime" required>
+                        <option value=""></option>
+                        <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                        <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                        <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="additionalNotes">Additional Notes (Optional)</label>
+                    <textarea id="additionalNotes" name="additionalNotes" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn"><a href="payment.html">Confirm Address</a> </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;/* hide overflow in x axis */
+}
+marquee{
+    background-color: #193B61;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 240px;
+    position: fixed;
+    z-index: 1000;
+    background: transparent;
+
+}
+.logo img{
+    width: 150px;
+}
+.logo span{
+    color: #Ffd700;
+}
+.logo i{
+    font-weight: 800;
+}
+.nav-logo{
+    display: none;
+}
+.arrow{
+    color: #193B61;
+    font-size: 1.3rem;
+}
+ul .nav-list{
+    border: 1px solid #193B61;
+    padding: 0 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 30px;  
+}
+header ul li:last-child{
+    margin-right: 0;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 22px 0;
+    display: inline-block;
+    color: #193B61;
+    transition: all ease 0.3s;
+}
+
+header ul .submenu{
+    position: absolute;
+    width: 200px;
+    background-color: #f2f2f2;
+    margin-top: -50px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    opacity: 0;
+    z-index: -999;
+}
+header ul li:hover .submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+header ul .submenu li{
+    margin: 0;
+    width: 100%;
+}
+header ul .submenu li a{
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* --------------------menu and close----------------- */
+
+.menu-icon,
+.close-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    z-index: 100;  /* * ensures it stayes above other elements */
+    color: #193B61;
+
+}
+.close-icon{
+    display: none;  /* * Hidden until the menu is open */
+}
+.social{
+    display: none;
+}
+
+/* -------------Enquiry------------------------ */
+.container{
+    width: 80%;
+    margin: 10% auto 10% auto;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-left h3{
+    color: #193B61;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #193B61;
+    color: #fff;
+    border-radius: 10px;
+}
+.container h1{
+    margin-top: 10%;
+    margin-bottom: 10px;
+    color: #193B61;
+    font-family: "Edu AU VIC WA NT Pre", serif ;
+}
+.container p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+.input-group input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.contact-form textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contact-form label{
+    margin-bottom: 6px;
+    display: block;
+    color: #000;
+}
+.contact-form button{
+    background-color: #193B61;
+    width: 100px;
+    border: 2px solid #193B61;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 10px;
+}
+.contact-form a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 70px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.app-button .app {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.app-button:hover {
+    background-color: #fff;
+    color: #193B61;
+}
+
+/* -------------------Login--------------------- */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto 10% auto;
+}
+.login-container {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.left-panel {
+    flex: 1;
+    background:#193B61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+.left-panel img {
+    width: 450px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.left-panel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.left-panel p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.right-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-panel h1 {
+    font-family: "Edu AU VIC WA NT Pre", serif ;
+    font-size: 2rem;
+    color: #193B61;
+    margin-bottom: 10px;
+}
+.right-panel h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+.right-panel span{
+    color: #Ffd700;
+}
+.login-form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.login-form label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+.login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.forgot-password {
+    font-size: 0.8rem;
+    color: #888;
+    text-decoration: none;
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+.sign-in-btn {
+    padding: 10px;
+    background: #193B61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+}
+.sign-in-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.or {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 15px 0;
+}
+.google-sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.google-sign-in a{
+    text-decoration: none;
+    color: #000;
+}
+.google-sign-in img {
+    width: 20px;
+    margin-right: 10px;
+}
+.new-account {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+}
+.new-account a {
+    color: #193B61;
+    text-decoration: none;
+    font-weight: 600;
+}
+.new-account a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------Signup----------------------- */
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto 10% auto;
+}
+.signup-container {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.left {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left span{
+    color: #Ffd700;
+}
+.left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+.left form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.left form label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+.left form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.sign-up-btn {
+    padding: 10px;
+    background: #193B61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+}
+.sign-up-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.existing-account {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: center;
+}
+.existing-account a {
+    color: #193B61;
+    text-decoration: none;
+    font-weight: 600;
+}
+.existing-account a:hover {
+    text-decoration: underline;
+}
+.right {
+    flex: 1;
+    background: #193B61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+.right img {
+    width: 400px;
+    height: 500px;
+    margin-top: 0px;
+}
+.right h2 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.right p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* -------------------Payment Method------------- */
+.payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.payment-container {
+    display: flex;
+    width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+}
+
+/* Left Section */
+.payment-summary {
+    width: 40%;
+    background-color: #193B61;
+    color: #fff;
+    padding:50px 20px;
+}
+.payment-summary h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.payment-summary p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.payment-summary hr {
+    border: 1px solid #fff;
+    margin: 20px 0;
+}
+.invoice, .next-payment {
+    margin: 20px 0;
+}
+.customer-support {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-btn {
+    cursor: pointer;
+}
+/* Right Section */
+.payment-methods {
+    width: 60%;
+    padding: 20px;
+}
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.payment-header h2 {
+    font-size: 1.5rem;
+}
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 230px;
+}
+.credit-card-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.add-btn {
+    background-color: #00b74a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.cards .card-btn  {
+    background: none;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+form .form-group {
+    margin-bottom: 15px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.input-group {
+    position: relative;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.input-group img, .input-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pay-btn {
+    background-color: #193B61;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+.pay-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --------------------Footer-------------------- */
+
+footer{
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, #00093c, #0e2540);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col img{
+    width: 150px;
+}
+.col span{
+    color: #Ffd700;
+}
+.col i{
+    font-weight: 800;
+}
+.col{
+    flex-basis: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.footer-logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.col ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.col iframe{
+    width: 1500px;
+    height: 250px;
+    border: 0;
+}
+.footer-icon{
+    display: flex;
+    justify-content: start;
+    font-size: 1.2rem;
+    gap: 20px;
+    margin-top: 10px;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copy{
+    text-align: center;
+}
+.underline{
+    width: 27%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+/* ---------------Media------------------------------ */
+@media (max-width: 1200px){
+    .col iframe{
+        width: 1000px;
+    }
+    .login-container {
+        max-width: 1000px;
+        margin-top: 10%;
+    }
+    .left-panel img {
+        width: 450px;
+    }
+}
+@media (max-width: 1000px){
+    .col iframe{
+        width: 850px;
+    }
+    .login-container {
+        max-width: 850px;
+        margin-top: 10%;
+    }
+    .left-panel img {
+        width: 350px;
+    }
+    header{
+        padding: 0px 40px;
+    }
+    .container{
+        width: 100%;
+        margin: 20% auto 10% auto;
+    }
+    .container h1,p{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:768px){
+    .menu-icon{
+        display: block;/* * show menu icon */
+    }
+    nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color:#fff;
+        width: 100%;
+        align-items: center;
+        padding-top: 30%;
+        margin-top: -50px;/*   margin top in menu icon */
+        height: 100vh;
+        flex-direction: column;
+        transition: all 0.3s ease;  
+    }
+    .nav-logo{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .nav-logo img{
+        width: 150px;
+    }
+    .nav-logo span{
+        color: #Ffd700;
+    }
+    .nav-logo i{
+        font-weight: 800;
+    }
+   
+    nav.active{
+        display: flex;   /* * show navbar when active */
+    }
+    .close-icon{
+        display: block;   /* * show close icon when menu is open */
+    }
+    .social{
+        position: absolute;
+        top: 90%;
+        display: block;
+    }
+    .icon{
+        font-size: 1.5rem;
+    }
+    .col iframe{
+        width: 600px;
+    }
+    .login-container {
+        max-width: 650px;
+        margin-top: 10%;
+    }
+    .left-panel img {
+        width: 250px;
+    }
+    .signup {
+        margin: 25% auto 15% auto;
+    }
+    .signup-container {
+        max-width: 1000px;
+    }
+    .left form {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .right img {
+        width: 200px;
+        height: 300px;
+    }
+    .right h2 {
+        font-size: 1.3rem;
+    }
+    .container h1,p{
+        margin-left: 30px;
+    }
+    .container h1{
+        font-size: 1.4rem;
+    }
+    .container p{
+        font-size: 0.9rem;
+    }
+    .contact-right{
+        padding: 20px;
+    }
+}
+ 
+@media (max-width:660px){
+    .col iframe{
+        display: none;
+    }
+    .login-container {
+        max-width: 550px;
+        margin-top: 10%;
+    }
+    .left-panel img {
+        width: 200px;
+    }
+    .left-panel h2 {
+        font-size: 1.3rem;
+    }  
+    .container{
+        margin: 30% auto 10% auto;
+    }
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .payment-summary {
+        width: 100%;
+    }
+    .payment-summary h2{
+        text-align: center;
+    }
+    .payment-methods{
+        width: 100%;
+    }
+    .payment-container {
+      display: grid;
+      margin: 0px 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .login{
+        margin-top: 25%;
+    }
+    .login-container {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .left-panel img {
+        width: 400px;
+    }
+    .signup-container {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .container{
+        margin: 40% auto 10% auto;
+    }
+    .container h1{
+        font-size:1.4rem ;
+    }
+    .container p{
+        font-size: .9rem;
+    }
+}
+@media (min-width:350px) and (max-width:450px){
+    .logo img{
+        width: 100px;
+        margin-top: 30px;
+    }
+    .logo i{
+        font-size: .8rem;
+    }
+    .payment-header {
+        display: none;
+    }
+}

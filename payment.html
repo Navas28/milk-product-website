@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Method</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="user.css">
+</head>
+<div>
+<div class="payment">
+
+    <div class="payment-container">
+        <!-- Left Section -->
+        <div class="payment-summary">
+        <h2>THANK YOU </h2>
+        <hr>
+        <div class="invoice">
+            <p><i class="far fa-file-alt"></i> Invoice ID:</p>
+            <span>ID5892625306</span>
+        </div>
+        <div class="next-payment">
+            <p><i class="far fa-calendar-alt"></i> Date:</p>
+            <span>12 March, 2024</span>
+        </div>
+        <hr>
+        <div class="customer-support">
+            <p>Customer <br> Support:</p>
+            <span> 24/7 <br> Availiable</span>
+            <a class="chat-btn"><img src="image/icons8-hotline-50-white.png"></a>
+        </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="payment-methods">
+            <h2>Payment methods</h2>
+        <header class="payment-header">
+            <a href="index.html"><img src="image/icons8-home-32.png" class="menu-btn"></a>
+        </header>
+        <div class="credit-card-options">
+            <div class="cards">
+            <button class="card-btn active"><img src="image/icons8-visa-card-48.png" alt=""></button>
+            <button class="card-btn active"><img src="image/icons8-mastercard-48.png" alt=""></button>
+            <button class="card-btn active"><img src="image/icons8-american-express-48.png" alt=""></button>
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+            <label for="card-number">Credit Card</label>
+
+            <div class="input-group">
+                <input type="text" id="card-number" required >
+                <img width="40" height="40" src="https://img.icons8.com/ios/50/bank-card-back-side--v1.png" alt="bank-card-back-side--v1"/>
+            </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group">
+                <label for="expiry-date">Expiration Date</label>
+                <div class="input-group">
+                <input type="text" id="expiry-date" required>
+                <i class="far fa-calendar-alt"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvv">Code CVV</label>
+                <div class="input-group">
+                <input type="password" id="cvv" required >
+                <i class="fas fa-lock"></i>
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+            <label for="name">Name</label>
+            <div class="input-group">
+                <input type="text" id="name" value="" required>
+                <i class="far fa-user"></i>
+            </div>
+            </div>
+            <button type="submit" class="pay-btn"><a href="PurchaseSuccess.html">Pay</a></button>
+        </form>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
