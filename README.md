@@ -1,4 +1,4 @@
-# **DGolden Dairy**  
+# **Golden Dairy**  
 A fully responsive website designed for selling dairy products. 
 
 ## **Features**  
