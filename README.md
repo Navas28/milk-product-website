@@ -4,8 +4,6 @@ A fully responsive website designed for selling dairy products.
 ## **Features**  
 - **Product Listings:** A variety of dairy products displayed with detailed information.  
 - **Overview:** Highlight key benefits and features of the products.  
-- **Payment Method:** Secure and easy-to-use payment options for customers.  
-- **User Accounts:** Login and signup functionality for personalized experiences.  
 - **FAQ Section:** Address common questions to assist users effectively.  
 - **Enquiry Form:** Allow users to submit queries directly through the website.  
 - **Facility Images:** Showcase facilities and infrastructure with high-quality visuals.  
